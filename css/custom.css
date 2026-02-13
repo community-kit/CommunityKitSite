@@ -1,3 +1,9 @@
+a.team-member-block-container {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
 .video-container {
 	position: relative;
 	width: 100%;
