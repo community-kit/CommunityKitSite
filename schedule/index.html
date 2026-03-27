@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CommunityKit schedule and daily lineup.">
+<meta name="author" content="Paul Hudson">
+<link rel="icon" href="/img/favicon.png">
+<title>CommunityKit | Schedule</title>
+<link href="/css/site-1.css" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css">
+<style>
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/poppins/Poppins-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+body.schedule-page {
+  background: #f3f2ec;
+}
+
+.schedule-page main {
+  padding-top: 72px;
+}
+
+.schedule-hero {
+  background:
+    linear-gradient(140deg, rgba(47, 179, 68, 0.94), rgba(122, 212, 98, 0.82)),
+    url(/img/contentbg.jpg) center/cover no-repeat;
+  color: #fff;
+  padding: 96px 0 72px;
+}
+
+.schedule-hero .hero-mark {
+  width: min(100%, 320px);
+  margin-bottom: 28px;
+}
+
+.schedule-hero p {
+  font-size: 1.25rem;
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+
+.schedule-shell {
+  padding: 72px 0 80px;
+}
+
+.schedule-intro-card {
+  background: #fff;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  box-shadow: 0 18px 40px rgba(20, 20, 20, 0.06);
+  padding: 28px;
+  margin-bottom: 44px;
+}
+
+.schedule-host-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: #141414;
+  color: #fff;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  box-shadow: 0 18px 40px rgba(20, 20, 20, 0.12);
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.schedule-host-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.schedule-host-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.schedule-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #2fb344;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.schedule-cta-button:hover,
+.schedule-cta-button:focus {
+  color: #141414;
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+.schedule-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.schedule-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ebebeb;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.schedule-day-card {
+  background: #fff;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  box-shadow: 0 18px 40px rgba(20, 20, 20, 0.06);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.schedule-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 24px 28px;
+  background: linear-gradient(180deg, rgba(47, 179, 68, 0.1), rgba(47, 179, 68, 0.02));
+  border-bottom: 1px solid rgba(20, 20, 20, 0.08);
+}
+
+.schedule-day-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.schedule-day-header p {
+  margin: 0;
+  color: rgba(20, 20, 20, 0.7);
+  font-size: 1rem;
+}
+
+.schedule-table-wrap {
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+}
+
+.schedule-table thead th {
+  background: #141414;
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background: #f8f7f2;
+}
+
+.schedule-table tbody tr + tr {
+  border-top: 1px solid rgba(20, 20, 20, 0.08);
+}
+
+.schedule-table .time-col {
+  width: 180px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.schedule-table .event-col {
+  min-width: 340px;
+}
+
+.schedule-table .event-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.schedule-table .event-title {
+  min-width: 0;
+  font-weight: 500;
+}
+
+.schedule-table .event-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #141414;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.schedule-table .event-button:hover,
+.schedule-table .event-button:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.schedule-table .location-col {
+  width: 140px;
+}
+
+.schedule-table .location-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(47, 179, 68, 0.12);
+  color: #1f7a2f;
+  font-size: 0.95rem;
+}
+
+.schedule-table .location-badge.all-rooms {
+  background: rgba(20, 20, 20, 0.08);
+  color: #141414;
+}
+
+.schedule-table .location-badge.board-room {
+  background: rgba(47, 179, 68, 0.18);
+}
+
+.schedule-footer-note {
+  background: #141414;
+  color: rgba(255, 255, 255, 0.84);
+  padding: 28px;
+  margin-top: 24px;
+}
+
+.schedule-footer-note p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .schedule-day-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .schedule-host-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .schedule-table-wrap {
+    overflow: visible;
+  }
+
+  .schedule-table {
+    min-width: 0;
+  }
+
+  .schedule-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .schedule-table,
+  .schedule-table tbody,
+  .schedule-table tr,
+  .schedule-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .schedule-table tbody {
+    display: grid;
+    gap: 14px;
+  }
+
+  .schedule-table tbody tr {
+    padding: 18px;
+    border: 1px solid rgba(20, 20, 20, 0.08);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(20, 20, 20, 0.06);
+  }
+
+  .schedule-table tbody tr:nth-child(even) {
+    background: #fff;
+  }
+
+  .schedule-table tbody tr + tr {
+    border-top: 0;
+  }
+
+  .schedule-table td {
+    padding: 0;
+  }
+
+  .schedule-table td + td {
+    margin-top: 14px;
+  }
+
+  .schedule-table td::before {
+    display: block;
+    margin-bottom: 6px;
+    color: rgba(20, 20, 20, 0.55);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .schedule-table td.time-col::before {
+    content: "Time";
+  }
+
+  .schedule-table td.event-col::before {
+    content: "Event";
+  }
+
+  .schedule-table td.location-col::before {
+    content: "Location";
+  }
+
+  .schedule-table td.location-col:empty {
+    display: none;
+  }
+
+  .schedule-table .time-col,
+  .schedule-table .event-col,
+  .schedule-table .location-col {
+    width: auto;
+    min-width: 0;
+  }
+
+  .schedule-table .event-content {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: flex-start;
+  }
+
+  .schedule-table .event-button {
+    justify-self: start;
+  }
+
+  .schedule-table .location-badge {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .schedule-hero {
+    padding: 88px 0 56px;
+  }
+
+  .schedule-hero p {
+    font-size: 1.05rem;
+  }
+
+  .schedule-day-header h2 {
+    font-size: 1.65rem;
+  }
+
+  .schedule-host-card,
+  .schedule-intro-card,
+  .schedule-footer-note {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body class="schedule-page">
+<nav id="darknav" class="navbar navbar-dark navbar-expand-md fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/"><img src="/img/logo-white.svg" class="img-fluid" alt="CommunityKit" width="220" /></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#venue">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#schedule">Overview</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/schedule/">Schedule</a></li>
+      </ul>
+      <a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn ticket-button ms-md-3">Get your FREE Ticket</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="schedule-hero">
+    <div class="container text-center">
+      <img src="/img/logo-white.svg" alt="CommunityKit" class="img-fluid hero-mark">
+      <h1 class="white">Schedule</h1>
+      <p>The CommunityKit schedule is evolving all week long. Check back here often for new events, updated details, and fresh sign up links.</p>
+    </div>
+  </section>
+
+  <section class="schedule-shell">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-title">
+            <h2 class="text-center"><span>At a Glance</span></h2>
+            <p class="subtitle text-center">Our schedule is evolving rapidly – check back often!</p>
+            <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+          </div>
+
+          <div class="schedule-host-card">
+            <div>
+              <h3>Want to host a community meetup?</h3>
+              <p>We’re still shaping the week. Send us your idea and we’ll follow up.</p>
+            </div>
+            <a class="schedule-cta-button" href="https://docs.google.com/forms/d/e/1FAIpQLScPNkhM08oW7nL2LRJaMFfi671YoswWCiGUlsLnc7VcUC5xEg/viewform?usp=header" target="_blank" rel="noopener noreferrer">Host an Event</a>
+          </div>
+
+          <div class="schedule-intro-card">
+            <p class="lead-sm mrgn-20-btm">This page changes as the week comes together. Check back regularly as we add more programming, lock in details, and publish new sign up links.</p>
+            <div class="schedule-pill-list">
+              <span class="schedule-pill"><i class="fa-regular fa-calendar"></i> Daily breakdown</span>
+              <span class="schedule-pill"><i class="fa-solid fa-location-dot"></i> Room information</span>
+              <span class="schedule-pill"><i class="fa-solid fa-bolt"></i> New sign up links as they go live</span>
+            </div>
+          </div>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 1</h2>
+                <p>Sunday, June 7, 2026</p>
+              </div>
+              <span class="accent">CommunityKit week begins here</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">9:30am - 12:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">Workshop: Write Faster, Smarter Swift – Featuring Paul Hudson</span>
+                        <a class="event-button" href="https://luma.com/nvgsjp74" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 2</h2>
+                <p>Monday, June 8, 2026</p>
+              </div>
+              <span class="accent">Keynote day</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">9:00am - 12:00pm</td>
+                    <td class="event-col"><span class="event-title">Keynote Watch Party with iOSDevHappyHour</span></td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">12:00pm - 1:00pm</td>
+                    <td class="event-col"><span class="event-title">Lunch Break</span></td>
+                    <td class="location-col"></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">1:00pm - 4:00pm</td>
+                    <td class="event-col"><span class="event-title">SOTU Watch Party</span></td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">7:00pm - 10:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">Students, Swift, St★rs</span>
+                        <a class="event-button" href="https://luma.com/28tkgxwv" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 3</h2>
+                <p>Tuesday, June 9, 2026</p>
+              </div>
+              <span class="accent">Breakfast, meetups, and more meetups!</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">8:00am - 10:00am</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">WWDC Women's Get-Together Breakfast</span>
+                        <a class="event-button" href="https://luma.com/xz8lx6c1" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">2:00pm - 4:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">What’s New in iOS 27 – Featuring Paul Hudson</span>
+                        <a class="event-button" href="https://luma.com/bwg9eoer" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">6:00pm - 7:00pm</td>
+                    <td class="event-col"><span class="event-title">Dinner Break</span></td>
+                    <td class="location-col"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 4</h2>
+                <p>Wednesday, June 10, 2026</p>
+              </div>
+              <span class="accent">Breakfast, live shows, and the indie fair</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">9:00am - 11:00am</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">Community Breakfast &amp; Trivia – Featuring Core Coffee</span>
+                        <a class="event-button" href="https://luma.com/afu4pnbp" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">11:00am - 12:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">Launched LIVE – Featuring Charlie Chapman</span>
+                        <a class="event-button" href="https://luma.com/dxme2hiw" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">12:00pm - 2:00pm</td>
+                    <td class="event-col"><span class="event-title">Lunch Break</span></td>
+                    <td class="location-col"></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">2:00pm - 4:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">Indie Fair</span>
+                        <a class="event-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfnmElzp7LBVlCHoAJE04pVpRXoMFX9HuYImiXp0P_Fu7eqhw/viewform?usp=sharing&amp;ouid=110234970495750767217" target="_blank" rel="noopener noreferrer">Show Your App</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 5</h2>
+                <p>Thursday, June 11, 2026</p>
+              </div>
+              <span class="accent">Late-week community energy</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">9:00am - 11:00am</td>
+                    <td class="event-col"><span class="event-title">Swift Small Talks</span></td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">11:00am - 12:00pm</td>
+                    <td class="event-col"><span class="event-title">Lunch Break</span></td>
+                    <td class="location-col"></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">12:00pm - 4:00pm</td>
+                    <td class="event-col"><span class="event-title">Code Crawl</span></td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">4:00pm - 7:00pm</td>
+                    <td class="event-col">
+                      <div class="event-content">
+                        <span class="event-title">AiOS Meetup – Featuring Rudrank Riyam</span>
+                        <a class="event-button" href="https://luma.com/ju8j7vtp" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                      </div>
+                    </td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="schedule-day-card">
+            <div class="schedule-day-header">
+              <div>
+                <h2>Day 6</h2>
+                <p>Friday, June 12, 2026</p>
+              </div>
+              <span class="accent">Closing out the week in style</span>
+            </div>
+            <div class="schedule-table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">TBA</td>
+                    <td class="event-col">TBA</td>
+                    <td class="location-col"><span class="location-badge all-rooms">TBA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <div class="schedule-footer-note">
+            <p class="mrgn-20-btm">More events and timing updates will be added as the week comes together.</p>
+            <p><a href="/" class="accent">Return to the landing page</a> whenever you want the broader event overview.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-9 col-lg-9">
+        <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2026 - CommunityKit.social | <a href="/code-of-conduct/">Code of Conduct</a></p>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item"> <a class="fa-brands fa-mastodon fa-lg" href="https://mastodon.social/@CommunityKit"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-bluesky fa-lg" href="https://bsky.app/profile/communitykit.bsky.social"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-twitter fa-lg" href="https://x.com/communitykit_"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-discord fa-lg" href="https://discord.gg/j9yQ3JnpAQ"></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/site-1.js"></script>
+</body>
+</html>

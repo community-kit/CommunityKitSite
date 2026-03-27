@@ -1,471 +1,585 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>CommunityKit | WWDC Week | June 8 - 12, 2026</title>
-        <meta name="author" content="Paul Hudson">
-        <meta name="robots" content="index follow">
-        <meta name="googlebot" content="index follow">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <meta name="keywords" content="wwdc, event, swift, community, communitykit">
-        <meta name="description" content="CommunityKit returns alongside WWDC, happening June 8 - 12, 2026. Sign up for Apple's in-person WWDC event and join the mailing list for CommunityKit updates.">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/img/favicon/favicon-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/img/favicon/favicon-180x180.png" />
-        <meta name="msapplication-TileImage" content="/img/favicon/favicon-270x270.png" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/js/vendor/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/custom.css" />
-        <style>
-            @media (max-width: 600px) {
-                .main-section.pt-0.pb-0.dark-1-color-bg {
-                    padding-top: 3rem !important;
-                    padding-bottom: 3rem !important;
-                }
-                .section-title-heading h1 {
-                    font-size: 2rem !important;
-                }
-                .section-title-content p {
-                    font-size: 1em !important;
-                    line-height: 1.4 !important;
-                    margin-bottom: 1.2rem !important;
-                    padding-left: 1.2rem;
-                    padding-right: 1.2rem;
-                    text-align: center;
-                }
-                .section-title-content span {
-                    font-size: 1em !important;
-                }
-                .section-title-content {
-                    margin-bottom: 2.5rem;
-                    max-width: 28rem;
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align: center;
-                }
-                .luma-checkout--button.btn.btn-lg {
-                    font-size: 1.1rem !important;
-                    padding: 18px 0 !important;
-                    width: 100% !important;
-                    max-width: 320px;
-                }
-                .mt-5 {
-                    margin-top: 2.5rem !important;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div id="main-wrapper">
-            <div id="main-container">
-                <header class="header-section header-section-fixed header-section-transparent">
-                    <div class="header-section-container">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A community event running alongside WWDC in Cupertino.">
+<meta name="author" content="Paul Hudson">
+<link rel="icon" href="/img/favicon.png">
+<title>CommunityKit | WWDC | June 7th to 12th in Cupertino</title>
+<!-- Bootstrap core CSS -->
+<link href="/css/site-1.css" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css">
+<!-- Fonts -->
+<style>
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/poppins/Poppins-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/roboto/Roboto-Bold.ttf) format('truetype');
+}
+</style>
+</head>
 
-                        <div class="header-menu-section transparent">
-                            <div class="header-menu-section-container">
-                                <nav class="navbar navbar-expand-lg">
-                                    <div class="container gx-4">
-                                        <a class="navbar-brand p-2" href="/" title="CommunityKit">
-                                            <img src="/img/logo-color.svg" style="width: 250px;" alt="CommunityKit" class="normal" />
-                                            <img src="/img/logo-white.svg" style="width: 250px;" alt="CommunityKit" class="transparent" />
-                                        </a>
+<body id="page-top">
+<!-- Navigation -->
+<nav id="darknav" class="navbar navbar-dark navbar-expand-md fixed-top">
+  <div class="container">
+    <!-- navbar-brand -->
+    <a class="navbar-brand" href="/"><img src="/img/logo-white.svg" class="img-fluid" alt="CommunityKit" width="220" /></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <!-- navbar-collapse -->
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#venue">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#schedule">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="/schedule/">Schedule</a></li>
+      </ul>
+      <a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn ticket-button ms-md-3">Get your FREE Ticket</a>
+    </div>
+    <!--/.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- /.Navigation -->
 
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-lines-wrapper">
-                                                <i class="navbar-toggler-line navbar-toggler-line-top"></i>
-                                                <i class="navbar-toggler-line navbar-toggler-line-middle"></i>
-                                                <i class="navbar-toggler-line navbar-toggler-line-bottom"></i>
-                                            </span>
-                                        </button>
-
-                                        <div class="header-menu desktop-menu navbar-collapse">
-                                            <ul class="navbar-nav ms-auto">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="/schedule.html">2025 Schedule</a>
-                                                </li>
-                                                <li class="nav-item headerbtn">
-                                                    <a href="#register-interest"
-                                                       class="nav-link btn btn-block btn-sm btn-round btn-outline-reverse custom-featured-apps-btn">
-                                                        Get Updates
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="header-menu mobile-menu collapse" id="mobile-menu">
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div id="page-body" class="page-body">
-                    <div class="row main-row justify-content-center">
-                        <div id="primary" class="content-area col-lg-12">
-                            <main id="main" class="content-area-container site-main">
-                                <div class="main-section pt-0 pb-0 dark-1-color-bg" style="background-image: url(/img/header4.png);">
-                                    <div class="container gx-4">
-                                        <div class="row gx-36 align-items-center justify-content-center height-100vh pt-72 pb-72">
-
-                                            <div class="col-lg-12">
-
-                                                <div class="gap gap-72 d-none d-xl-block"></div>
-
-                                                <div class="section-title section-title-intro text-center light-color mb-12">
-                                                    <div class="section-title-container">
-
-                                                        <div class="section-title-body">
-
-                                                            <div class="section-title-heading">
-                                                                <h1 class="font-weight-900" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><span style="font-size: 1.4em;">CommunityKit</span><br><span style="font-size: 0.8em;">June 8 - 12, 2026</span></h1>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="gap gap-6 d-none d-md-block"></div>
-
-                                                <div class="section-title section-title-intro text-center light-color hero-intro-section">
-                                                    <div class="section-title-container">
-
-                                                        <div class="section-title-body hero-intro-panel">
-
-                                                            <div class="section-title-content">
-                                                                <p class="secondary-font-family white-color hero-intro-copy"><span style="display: block; margin-bottom: 1rem;">CommunityKit returns alongside WWDC, happening June 8 - 12, 2026.</span>Apple has opened signups for the in-person WWDC event while we finish updating CommunityKit details.</p>
-                                                                <p class="secondary-font-family white-color hero-intro-subcopy">Sign up for WWDC in person, then join our mailing list for CommunityKit updates.</p>
-                                                                <div class="hero-cta-row">
-                                                                    <a href="https://developer.apple.com/wwdc26/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-round custom-featured-apps-btn hero-primary-cta">
-                                                                        WWDC In-Person Signup
-                                                                    </a>
-                                                                </div>
-                                                                <div class="hero-signup-shell">
-                                                                    <script async data-uid="28f3427844" src="https://communitykit.kit.com/28f3427844/index.js"></script>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="gap gap-18 d-none d-md-block"></div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-section grey-1-color-bg" id="status-update">
-                                    <div class="container gx-4">
-                                        <div class="row gx-36 justify-content-center">
-                                            <div class="col-lg-10">
-                                                <div class="section-title text-center">
-                                                    <div class="section-title-container">
-                                                        <div class="section-title-body">
-                                                            <div class="section-title-heading">
-                                                                <h6 class="font-weight-500 accent-color">Latest Update</h6>
-                                                                <h2>WWDC is happening June 8 - 12, 2026</h2>
-                                                            </div>
-
-                                                            <div class="hr-divider hr-divider-layout-1 accent-color"></div>
-
-                                                            <div class="section-title-content">
-                                                                <p>CommunityKit is coming back for WWDC week. We're actively updating the site now, and the full event details will follow shortly.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="coming-soon-grid">
-                                                    <div class="coming-soon-card">
-                                                        <div class="coming-soon-icon">
-                                                            <i class="fas fa-calendar-alt"></i>
-                                                        </div>
-                                                        <h4>WWDC dates are set</h4>
-                                                        <p>WWDC runs June 8 - 12, 2026, and CommunityKit is planning around that week now.</p>
-                                                    </div>
-
-                                                    <div class="coming-soon-card">
-                                                        <div class="coming-soon-icon">
-                                                            <i class="fas fa-clock"></i>
-                                                        </div>
-                                                        <h4>Attending WWDC in person?</h4>
-                                                        <p><a href="https://developer.apple.com/wwdc26/" target="_blank" rel="noopener noreferrer">Sign up with Apple for the in-person event</a> while we finalize the CommunityKit schedule.</p>
-                                                    </div>
-
-                                                    <div class="coming-soon-card">
-                                                        <div class="coming-soon-icon">
-                                                            <i class="fas fa-envelope-open-text"></i>
-                                                        </div>
-                                                        <h4>Best way to follow along</h4>
-                                                        <p>Join the mailing list below and check back soon for more information.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="main-section" id="register-interest">
-                                    <div class="container gx-4">
-                                        <div class="row gx-36">
-
-                                            <div class="col-lg-8 offset-lg-2 pt-5 mt-5">
-
-                                                <div class="section-title text-center">
-                                                    <div class="section-title-container">
-                                                        <div class="section-title-body">
-                                                            <div class="section-title-heading">
-                                                                <h6 class="font-weight-500 accent-color">Want to come?</h6>
-                                                                <h2>Join Our Mailing List</h2>
-                                                            </div>
-
-                                                            <div class="hr-divider hr-divider-layout-1 accent-color"></div>
-
-                                                            <div class="section-title-content">
-                                                                <div class="luma-signup-container" style="
-                                                                    max-width: 500px;
-                                                                    margin: 0 auto 32px auto;
-                                                                    padding: 32px 24px;
-                                                                    background: #f8f9fa;
-                                                                    border-radius: 12px;
-                                                                    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-                                                                    border: 1px solid #e0e6ed;
-                                                                    text-align: center;
-                                                                ">
-                                                                    <h3 style="margin-bottom: 18px; font-weight: 700; color: #2FB344;">Get notified and check back soon for more details</h3>
-                                                                    <script async data-uid="28f3427844" src="https://communitykit.kit.com/28f3427844/index.js"></script>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="gap gap-36"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="main-section pb-0" id="section-6">
-                                    <div class="container gx-4">
-                                        <div class="row gx-36 align-items-center justify-content-center">
-                                            <div class="col-lg-8">
-                                                <div class="section-title text-center">
-                                                    <div class="section-title-container">
-                                                        <div class="section-title-body">
-                                                            <div class="section-title-heading">
-                                                                <h2>Our Team</h2>
-                                                            </div>
-
-                                                            <div class="hr-divider hr-divider-layout-1 accent-color"></div>
-
-                                                                                                        <p>CommunityKit is organized by a group of friends working to make a welcoming place for everyone in the Swift community, but we'd love to have more people join in.</p>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="gap gap-36"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="main-section pt-0 pb-0">
-                                    <div class="container-fluid gx-0">
-                                        <div class="row gx-0 align-items-center">
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://www.aberfeldystudios.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/adrian.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Adrian Eves</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://chriswu.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/chris.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Chris Wu</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://www.instagram.com/mikaelacaron/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/mikaela.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Mikaela Caron</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://ph.linkedin.com/in/michieang" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/michie.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Michie Ang</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://www.tamiajamesdesign.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/tamia.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Tamia James</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://benfreiband.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/ben.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Ben Freiband</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://www.frankefoster.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/frank.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Frank Foster</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3">
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <a href="https://www.hackingwithswift.com/" target="_blank" rel="noopener noreferrer" class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/paul.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">Paul Hudson</h4>
-                                                                <!-- <h6 class="role font-weight-500">Volunteer today!</h6> -->
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <!-- Commented out volunteer section:
-                                                <div class="main-block team-member-block team-member-block-layout-4 light-color mb-0">
-                                                    <div class="main-block-container team-member-block-container">
-                                                        <div class="main-block-header team-member-block-header">
-                                                            <img src="/img/volunteer.jpg" alt="Image" />
-                                                        </div>
-
-                                                        <div class="main-block-body team-member-block-body">
-                                                            <div class="main-block-heading team-member-block-heading">
-                                                                <h4 class="name">You?</h4>
-                                                                <h6 class="role font-weight-500">Volunteer today!</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </main>
-                        </div>
-                        </div>
-                </div>
-
-                <!-- Footer
-                ============================================================ -->
-                <footer id="colophon" class="footer-section site-footer">
-                    <div class="footer-section-container">
-
-                        <div class="footer-section-top">
-                            <div class="main-section">
-                                <div class="container gx-4">
-                                    <div class="row gx-36">
-
-                                        <div class="col-lg-12">
-
-                                            <div class="widget widget_image text-center mb-36">
-                                                <a href="/" title="Bason">
-                                                    <img src="/img/logo-white.svg" style="width: 350px;" alt="CommunityKit" />
-                                                </a>
-                                            </div>
-
-                                            <div class="widget widget_text light-color text-center">
-                                                <div class="textwidget">
-                                                    <p>&copy; <span class="current-year">2025</span> CommunityKit.social. All rights reserved. | <a href="/code-of-conduct.html">Code of Conduct</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+<!-- Header -->
+<header id="fullwidth" class="homepage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Heading Title Area -->
+        <div class="header-text white text-center">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <img src="/img/logo-white.svg" class="img-fluid hero-logo pddn-20-top pddn-20-btm" alt="CommunityKit" />
             </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+              <h2 class="white">Join us for community meetups, live podcasts, an indie fair, workshops, and more</h2>
+              <h3 class="mrgn-50-top white sm-title"><span class="date">June 7 - 12, Cupertino, CA</span></h3>
+              <p class="hero-ticket-wrap"><a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn hero-ticket-button">Get your FREE Ticket</a></p>
+            </div>
+          </div>
+          <!-- Animated Arrow -->
+          <div class="arrow text-center"> <i class="fa-solid fa-angle-down fa-4x"></i> </div>
+          <!-- /.Animated Arrow -->
         </div>
+        <!-- /.Heading Title Area -->
 
-        <script src="/js/vendor/jquery/jquery-3.6.0.min.js"></script>
-        <script src="/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/scripts.js"></script>
-    </body>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</header>
+<!-- /.Header -->
+
+<!-- Event Features -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <!-- Feature 01 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/ideas.svg" width="49" height="80" class="img-fluid" alt="3 Days" />
+        <h3 class="accent">6 Days</h3>
+        <p>We're running events from Sunday through Friday of WWDC week, daytime and evening – there's lots to enjoy!</p>
+      </div>
+      <!-- /.Feature 01 -->
+      <!-- Feature 02 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/discussions.svg" width="76" height="80" class="img-fluid" alt="Community Focus" />
+        <h3 class="accent">Community</h3>
+        <p>Come and meet the folks from iOSDevHappyHour, Hacking with Swift, try! Swift, WWDCScholars, and more!</p>
+      </div>
+      <!-- /.Feature 02 -->
+      <!-- Feature 03 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/exhibitions.svg" width="76" height="80" class="img-fluid" alt="Free Entry" />
+        <h3 class="accent">Free Entry</h3>
+        <p>Our goal is to ensure everyone who wants to attend can find a place here, so all our standard tickets are free.</p>
+      </div>
+      <!-- /.Feature 03 -->
+      <!-- Feature 04 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/workshops.svg" width="70" height="70" class="img-fluid" alt="Live Entertainment" />
+        <h3 class="accent">Entertainment</h3>
+        <p>Live podcast recordings, workshops, and plenty of surprises all week. There's always something happening!</p>
+      </div>
+      <!-- /.Feature 04 -->
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.About -->
+
+<!-- Highlight -->
+<section id="venue">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title-white">
+          <h2 class="text-center"><span>Venue</span></h2>
+          <p class="subtitle white text-center">Where to find us during WWDC week</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg white"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Venue Box -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="dark-box pddn-50 text-center">
+          <p class="mrgn-20-btm"><img src="/img/venue.jpg" class="img-fluid" alt="Residence Inn Cupertino" /></p>
+          <h3 class="text-uppercase white">Residence Inn Cupertino</h3>
+          <p class="lead-sm text-uppercase"> 19429 Stevens Creek Blvd <br/>
+            Cupertino, CA 95014 <br/>
+          </p>
+          <p class="mrgn-20-top"><a href="https://www.marriott.com/en-us/hotels/sjcpt-residence-inn-san-jose-cupertino/rooms/" target="_blank" rel="noopener noreferrer" class="btn volunteer-button">Book A Room</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Venue Box -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Highlight -->
+
+<!-- Schedule Timeline -->
+<section id="schedule">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Overview</span></h2>
+          <p class="subtitle text-center">Six days of community events alongside WWDC</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+    <!-- Schedule Grid -->
+    <div class="row overview-grid">
+      <div class="col-md-6">
+        <div class="news-item">
+          <div class="details">
+            <h3>Meet the Community</h3>
+            <p>Whether you're new to WWDC or a veteran, this is your home. Meet like-minded developers, designers, and creators from communities like iOSDevHappyHour, Hacking with Swift, try! Swift, and WWDCScholars.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="news-item">
+          <div class="details">
+            <h3>Watch Parties</h3>
+            <p>No ticket to Apple Park? No problem! Join us for our famous Keynote and State of the Union watch parties, where we'll be streaming all the action live with the best crowd in Cupertino.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mrgn-20-top">
+        <div class="news-item">
+          <div class="details">
+            <h3>Show Off Your Work</h3>
+            <p>The indie dev community thrives on collaboration. We're hosting an Indie Fair where developers and designers of all backgrounds can show off their current project: an app, a design, or anything in between.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mrgn-20-top">
+        <div class="news-item">
+          <div class="details">
+            <h3>Live Entertainment</h3>
+            <p>We're lining up live podcast recordings and workshops throughout the week, with something for everyone no matter your interests. More announcements coming soon, so follow us to be the first to know!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Schedule Grid -->
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mrgn-50-top text-center"><a href="/schedule/" class="btn volunteer-button">Check Out the Schedule</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Schedule Timeline -->
+
+<!-- Section What's On -->
+<section id="pricing">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title-white">
+          <h2 class="text-center"><span>What's On</span></h2>
+          <p class="subtitle white text-center">Six days of community events alongside WWDC</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg white"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Days -->
+    <div class="row g-3">
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Sunday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-1.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Registration</li>
+            <li>Free workshops</li>
+            <li>A relaxed start to the week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Monday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-6.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Keynote watch party</li>
+            <li>State of the Union together</li>
+            <li>Students, Swift, St★rs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Tuesday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-3.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>WWDC Women Get Together</li>
+            <li>What’s New in <span style="text-transform: none;">i</span>OS 27</li>
+            <li>More meet ups</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Wednesday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-4.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Breakfast and trivia</li>
+            <li>Launched LIVE with Charlie Chapman</li>
+            <li>Indie Fair showcase</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Thursday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-5.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Swift Small Talks</li>
+            <li>Code Crawl</li>
+            <li>A<span style="text-transform: none;">i</span>OS Meetup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Friday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-2.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Friday plans are still forming</li>
+            <li>More details coming soon</li>
+            <li>Check back for updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.Days -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Section What's On -->
+
+<!-- Section Getting Ready -->
+<section id="latest-news">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Getting Ready</span></h2>
+          <p class="subtitle text-center">The countdown is on! Here's how to prepare for WWDC week</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Getting Ready List -->
+    <div class="row getting-ready-grid">
+      <div class="col-sm-4">
+        <!-- Item 01 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Connect &amp; Plan</h3>
+            <p>Connect with attendees in Cupertino through our official Discord group! Plan activities, share tips on housing and food, and start making friends before the event.</p>
+            <p><a href="https://discord.gg/62wqXDPc" class="btn btn-main-ghost w-100">Join Discord</a></p>
+          </div>
+        </div>
+        <!-- /.Item 01 -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Item 02 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Stay Updated</h3>
+            <p>Be the first to know about what's happening! Follow us on <a href="https://mastodon.social/@CommunityKit" style="text-decoration:underline">Mastodon</a>, <a href="https://bsky.app/profile/communitykit.bsky.social" style="text-decoration:underline">Bluesky</a>, or <a href="https://x.com/communitykit_" style="text-decoration:underline">Twitter</a> for the latest announcements, schedule updates, and speaker reveals.</p>
+            <p><a href="https://mastodon.social/@CommunityKit" class="btn btn-main-ghost w-100">Follow Us</a></p>
+          </div>
+        </div>
+        <!-- /.Item 02 -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Item 03 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Get Your Ticket</h3>
+            <p>Tickets are live now, and they’re free. Claim yours today and we’ll see you in Cupertino.</p>
+            <p><a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn btn-main-ghost w-100">Get your FREE Ticket</a></p>
+          </div>
+        </div>
+        <!-- /.Item 03 -->
+      </div>
+    </div>
+    <!-- /.Getting Ready List -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Section Getting Ready -->
+
+<!-- About Community -->
+<section class="white-bg">
+  <div class="container">
+    <div class="row mrgn-20-top">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Our Team</span></h2>
+          <p class="subtitle text-center">CommunityKit is organized by a group of friends working to make a welcoming place for everyone</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/michie.jpg" width="300" height="300" alt="Michie Ang" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Michie Ang</p>
+              <ul class="list-inline team-social" aria-label="Michie Ang links">
+                <li class="list-inline-item"><a href="https://ph.linkedin.com/in/michieang" target="_blank" rel="noopener noreferrer" aria-label="Michie Ang on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/mikaela.jpg" width="300" height="300" alt="Mikaela Caron" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Mikaela Caron</p>
+              <ul class="list-inline team-social" aria-label="Mikaela Caron links">
+                <li class="list-inline-item"><a href="https://x.com/mikaela__caron" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://swiftdevs.space/@mikaelacaron" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/mikaelacaron.com" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mikaelacaron.com/" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/adrian.jpg" width="300" height="300" alt="Adrian Eves" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Adrian Eves</p>
+              <ul class="list-inline team-social" aria-label="Adrian Eves links">
+                <li class="list-inline-item"><a href="https://x.com/swifteves" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/swifteves.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@swifteves" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.aberfeldystudios.com/" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/frank.jpg" width="300" height="300" alt="Frank Foster" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Frank Foster</p>
+              <ul class="list-inline team-social" aria-label="Frank Foster links">
+                <li class="list-inline-item"><a href="https://bsky.app/profile/frankefoster.com" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://iosdev.space/@frankfoster" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.frankefoster.com/" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/ben.jpg" width="300" height="300" alt="Ben Freiband" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Ben Freiband</p>
+              <ul class="list-inline team-social" aria-label="Ben Freiband links">
+                <li class="list-inline-item"><a href="https://x.com/benfreiband" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/benfreiband.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@benfreiband" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://benfreiband.com/" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/paul.jpg" width="300" height="300" alt="Paul Hudson" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Paul Hudson</p>
+              <ul class="list-inline team-social" aria-label="Paul Hudson links">
+                <li class="list-inline-item"><a href="https://x.com/twostraws" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@twostraws" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/twostraws.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.hackingwithswift.com/" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/tamia.jpg" width="300" height="300" alt="Tamia James" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Tamia James</p>
+              <ul class="list-inline team-social" aria-label="Tamia James links">
+                <li class="list-inline-item"><a href="https://www.tamiajamesdesign.com/" target="_blank" rel="noopener noreferrer" aria-label="Tamia James website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/chris.jpg" width="300" height="300" alt="Chris Wu" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Chris Wu</p>
+              <ul class="list-inline team-social" aria-label="Chris Wu links">
+                <li class="list-inline-item"><a href="https://bsky.app/profile/chriswu.com" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@MuseumShuffle" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://chriswu.com/" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mrgn-50-top text-center">We'd love your help! Whether it's for a whole day or just a few hours, every volunteer makes a difference.</p>
+        <p class="text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe8W4F5dP1NZT0WWpagiYmvVQ-0GYvEGJqAMUZnP6KRodaz_w/viewform?usp=header" class="btn volunteer-button">Volunteer at CommunityKit</a></p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:120px;">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Sponsor</span></h2>
+          <p class="subtitle text-center">CommunityKit is made possible by our generous sponsor</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-8 col-10 mrgn-20-top-btm"><a href="https://www.revenuecat.com/" target="_blank"><img class="img-fluid mx-auto d-block" src="/img/revenuecat.svg" alt="RevenueCat" /></a></div>
+    </div>
+  </div>
+</section>
+<!-- /.About Community -->
+
+
+<!-- Section Location -->
+<section id="location">
+  <address>Residence Inn Cupertino, 19429 Stevens Creek Blvd, Cupertino, CA 95014</address>
+</section>
+<!-- /.Section Location -->
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-9 col-lg-9">
+        <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2026 - CommunityKit.social | <a href="/code-of-conduct/">Code of Conduct</a></p>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3">
+        <!-- Footer Social Profiles List -->
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item"> <a class="fa-brands fa-mastodon fa-lg" href="https://mastodon.social/@CommunityKit"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-bluesky fa-lg" href="https://bsky.app/profile/communitykit.bsky.social"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-twitter fa-lg" href="https://x.com/communitykit_"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-discord fa-lg" href="https://discord.gg/j9yQ3JnpAQ"></a> </li>
+        </ul>
+        <!-- /.Footer Social Profiles List -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- /.Footer -->
+
+<script src="/js/site-1.js"></script>
+</body>
 </html>
