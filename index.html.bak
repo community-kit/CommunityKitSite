@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A community event running alongside WWDC in Cupertino.">
+    <meta name="author" content="Paul Hudson">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CommunityKit" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://communitykit.social" />
+    <meta property="og:description" content="A community event running alongside WWDC in Cupertino. Join us for community meetups, live podcasts, an indie fair, workshops and more..." />
+    <meta property="og:site_name" content="CommunityKit" />
+
+    <meta property="og:image" content="https://raw.githubusercontent.com/community-kit/CommunityKitSite/refs/heads/main/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CommunityKit. Join us for community meetups, live podcasts, an indie fair, workshops and more..." />
+  
+    <link rel="icon" href="/img/favicon.png">
+    <title>CommunityKit | WWDC | June 7th to 12th in Cupertino</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/site-1.css" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css">
+
+    <!-- Fonts -->
+
+    <style>
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        src: url(/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        src: url(/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        src: url(/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        src: url(/fonts/poppins/Poppins-Black.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/fonts/roboto/Roboto-Regular.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(/fonts/roboto/Roboto-Bold.ttf) format('truetype');
+      }
+    </style>
+</head>
+
+<body id="page-top">
+<!-- Navigation -->
+<nav id="darknav" class="navbar navbar-dark navbar-expand-md fixed-top">
+  <div class="container">
+    <!-- navbar-brand -->
+    <a class="navbar-brand" href="/"><img src="/img/logo-white.svg" class="img-fluid" alt="CommunityKit" width="220" /></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <!-- navbar-collapse -->
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#venue">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#schedule">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="/schedule/">Schedule</a></li>
+      </ul>
+      <a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn ticket-button ms-md-3">Get your FREE Ticket</a>
+    </div>
+    <!--/.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- /.Navigation -->
+
+<!-- Header -->
+<header id="fullwidth" class="homepage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Heading Title Area -->
+        <div class="header-text white text-center">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <img src="/img/logo-white.svg" class="img-fluid hero-logo pddn-20-top pddn-20-btm" alt="CommunityKit" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+              <h2 class="white">Join us for community meetups, live podcasts, an indie fair, workshops, and more</h2>
+              <h3 class="mrgn-50-top white sm-title"><span class="date">June 7 - 12, Cupertino, CA</span></h3>
+              <p class="hero-ticket-wrap"><a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn hero-ticket-button">Get your FREE Ticket</a></p>
+            </div>
+          </div>
+          <!-- Animated Arrow -->
+          <div class="arrow text-center"> <i class="fa-solid fa-angle-down fa-4x"></i> </div>
+          <!-- /.Animated Arrow -->
+        </div>
+        <!-- /.Heading Title Area -->
+
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</header>
+<!-- /.Header -->
+
+<!-- Video -->
+<section id="video" class="white-bg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="section-title">
+          <h2 class="text-center"><span>Watch the Trailer</span></h2>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.12);">
+          <iframe src="https://www.youtube-nocookie.com/embed/6guxo7AHrbA" title="CommunityKit Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.Video -->
+
+<!-- Event Features -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <!-- Feature 01 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/ideas.svg" width="49" height="80" class="img-fluid" alt="3 Days" />
+        <h3 class="accent">6 Days</h3>
+        <p>We're running events from Sunday through Friday of WWDC week, daytime and evening – there's lots to enjoy!</p>
+      </div>
+      <!-- /.Feature 01 -->
+      <!-- Feature 02 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/discussions.svg" width="76" height="80" class="img-fluid" alt="Community Focus" />
+        <h3 class="accent">Community</h3>
+        <p>Come and meet the folks from iOSDevHappyHour, Hacking with Swift, try! Swift, WWDCScholars, and more!</p>
+      </div>
+      <!-- /.Feature 02 -->
+      <!-- Feature 03 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/exhibitions.svg" width="76" height="80" class="img-fluid" alt="Free Entry" />
+        <h3 class="accent">Free Entry</h3>
+        <p>Our goal is to ensure everyone who wants to attend can find a place here, so all our standard tickets are free.</p>
+      </div>
+      <!-- /.Feature 03 -->
+      <!-- Feature 04 -->
+      <div class="col-lg-3 col-sm-6 col-6"> <img src="/img/workshops.svg" width="70" height="70" class="img-fluid" alt="Live Entertainment" />
+        <h3 class="accent">Entertainment</h3>
+        <p>Live podcast recordings, workshops, and plenty of surprises all week. There's always something happening!</p>
+      </div>
+      <!-- /.Feature 04 -->
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.About -->
+
+<!-- Highlight -->
+<section id="venue">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title-white">
+          <h2 class="text-center"><span>Venue</span></h2>
+          <p class="subtitle white text-center">Where to find us during WWDC week</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg white"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Venue Box -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="dark-box pddn-50 text-center">
+          <p class="mrgn-20-btm"><img src="/img/venue.jpg" class="img-fluid" alt="Residence Inn Cupertino" /></p>
+          <h3 class="text-uppercase white">Residence Inn Cupertino</h3>
+          <p class="lead-sm text-uppercase"> 19429 Stevens Creek Blvd <br/>
+            Cupertino, CA 95014 <br/>
+          </p>
+          <p class="mrgn-20-top"><a href="https://www.marriott.com/en-us/hotels/sjcpt-residence-inn-san-jose-cupertino/rooms/" target="_blank" rel="noopener noreferrer" class="btn volunteer-button">Book A Room</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Venue Box -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Highlight -->
+
+<!-- Schedule Timeline -->
+<section id="schedule">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Overview</span></h2>
+          <p class="subtitle text-center">Six days of community events alongside WWDC</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+    <!-- Schedule Grid -->
+    <div class="row overview-grid">
+      <div class="col-md-6">
+        <div class="news-item">
+          <div class="details">
+            <h3>Meet the Community</h3>
+            <p>Whether you're new to WWDC or a veteran, this is your home. Meet like-minded developers, designers, and creators from communities like iOSDevHappyHour, Hacking with Swift, try! Swift, and WWDCScholars.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="news-item">
+          <div class="details">
+            <h3>Watch Parties</h3>
+            <p>No ticket to Apple Park? No problem! Join us for our famous Keynote and State of the Union watch parties, where we'll be streaming all the action live with the best crowd in Cupertino.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mrgn-20-top">
+        <div class="news-item">
+          <div class="details">
+            <h3>Show Off Your Work</h3>
+            <p>The indie dev community thrives on collaboration. We're hosting an Indie Fair where developers and designers of all backgrounds can show off their current project: an app, a design, or anything in between.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mrgn-20-top">
+        <div class="news-item">
+          <div class="details">
+            <h3>Live Entertainment</h3>
+            <p>We're lining up live podcast recordings and workshops throughout the week, with something for everyone no matter your interests. More announcements coming soon, so follow us to be the first to know!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Schedule Grid -->
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mrgn-50-top text-center"><a href="/schedule/" class="btn volunteer-button">Check Out the Schedule</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Schedule Timeline -->
+
+<!-- Section What's On -->
+<section id="pricing">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title-white">
+          <h2 class="text-center"><span>What's On</span></h2>
+          <p class="subtitle white text-center">Six days of community events alongside WWDC</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg white"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Days -->
+    <div class="row g-3">
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Sunday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-1.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Registration</li>
+            <li>Free workshops</li>
+            <li>A relaxed start to the week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Monday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-6.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Keynote watch party</li>
+            <li>State of the Union together</li>
+            <li>Students, Swift, St★rs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Tuesday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-3.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>WWDC Women Get Together</li>
+            <li>What’s New in <span style="text-transform: none;">i</span>OS 27</li>
+            <li>More meet ups</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Wednesday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-4.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Breakfast and trivia</li>
+            <li>Launched LIVE with Charlie Chapman</li>
+            <li>Indie Fair showcase</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Thursday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-5.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Swift Small Talks</li>
+            <li>Code Crawl</li>
+            <li>A<span style="text-transform: none;">i</span>OS Meetup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="white-bg position-relative">
+          <h3 class="text-uppercase text-center pddn-20-top pddn-10-btm">Friday</h3>
+          <div class="pddn-20-top-btm text-center" style="background:url('/img/placeholder-2.jpg') center/cover no-repeat; min-height:120px">
+          </div>
+          <ul class="list-pricing">
+            <li>Friday plans are still forming</li>
+            <li>More details coming soon</li>
+            <li>Check back for updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.Days -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Section What's On -->
+
+<!-- Section Getting Ready -->
+<section id="latest-news">
+  <div class="container">
+    <!-- Title & Subtitle -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Getting Ready</span></h2>
+          <p class="subtitle text-center">The countdown is on! Here's how to prepare for WWDC week</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.Title & Subtitle -->
+
+    <!-- Getting Ready List -->
+    <div class="row getting-ready-grid">
+      <div class="col-sm-4">
+        <!-- Item 01 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Connect &amp; Plan</h3>
+            <p>Connect with attendees in Cupertino through our official Discord group! Plan activities, share tips on housing and food, and start making friends before the event.</p>
+            <p><a href="https://discord.gg/t9r4QvK6sa" class="btn btn-main-ghost w-100">Join Discord</a></p>
+          </div>
+        </div>
+        <!-- /.Item 01 -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Item 02 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Stay Updated</h3>
+            <p>Be the first to know about what's happening! Follow us on <a href="https://mastodon.social/@CommunityKit" style="text-decoration:underline">Mastodon</a>, <a href="https://bsky.app/profile/communitykit.bsky.social" style="text-decoration:underline">Bluesky</a>, or <a href="https://x.com/communitykit_" style="text-decoration:underline">Twitter</a> for the latest announcements, schedule updates, and speaker reveals.</p>
+            <p><a href="https://mastodon.social/@CommunityKit" class="btn btn-main-ghost w-100">Follow Us</a></p>
+          </div>
+        </div>
+        <!-- /.Item 02 -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Item 03 -->
+        <div class="news-item">
+          <div class="details">
+            <h3>Get Your Ticket</h3>
+            <p>Tickets are live now, and they’re free. Claim yours today and we’ll see you in Cupertino.</p>
+            <p><a href="https://luma.com/848w7ld2" target="_blank" rel="noopener noreferrer" class="btn btn-main-ghost w-100">Get your FREE Ticket</a></p>
+          </div>
+        </div>
+        <!-- /.Item 03 -->
+      </div>
+    </div>
+    <!-- /.Getting Ready List -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.Section Getting Ready -->
+
+<!-- About Community -->
+<section class="white-bg">
+  <div class="container">
+    <div class="row mrgn-20-top">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Our Team</span></h2>
+          <p class="subtitle text-center">CommunityKit is organized by a group of friends working to make a welcoming place for everyone</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/michie.jpg" width="300" height="300" alt="Michie Ang" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Michie Ang</p>
+              <ul class="list-inline team-social" aria-label="Michie Ang links">
+                <li class="list-inline-item"><a href="https://ph.linkedin.com/in/michieang" target="_blank" rel="noopener noreferrer" aria-label="Michie Ang on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/mikaela.jpg" width="300" height="300" alt="Mikaela Caron" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Mikaela Caron</p>
+              <ul class="list-inline team-social" aria-label="Mikaela Caron links">
+                <li class="list-inline-item"><a href="https://x.com/mikaela__caron" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://swiftdevs.space/@mikaelacaron" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/mikaelacaron.com" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mikaelacaron.com/" target="_blank" rel="noopener noreferrer" aria-label="Mikaela Caron website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/adrian.jpg" width="300" height="300" alt="Adrian Eves" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Adrian Eves</p>
+              <ul class="list-inline team-social" aria-label="Adrian Eves links">
+                <li class="list-inline-item"><a href="https://x.com/swifteves" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/swifteves.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@swifteves" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.aberfeldystudios.com/" target="_blank" rel="noopener noreferrer" aria-label="Adrian Eves website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/frank.jpg" width="300" height="300" alt="Frank Foster" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Frank Foster</p>
+              <ul class="list-inline team-social" aria-label="Frank Foster links">
+                <li class="list-inline-item"><a href="https://bsky.app/profile/frankefoster.com" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://iosdev.space/@frankfoster" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.frankefoster.com/" target="_blank" rel="noopener noreferrer" aria-label="Frank Foster website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/ben.jpg" width="300" height="300" alt="Ben Freiband" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Ben Freiband</p>
+              <ul class="list-inline team-social" aria-label="Ben Freiband links">
+                <li class="list-inline-item"><a href="https://x.com/benfreiband" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/benfreiband.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@benfreiband" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://benfreiband.com/" target="_blank" rel="noopener noreferrer" aria-label="Ben Freiband website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/paul.jpg" width="300" height="300" alt="Paul Hudson" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Paul Hudson</p>
+              <ul class="list-inline team-social" aria-label="Paul Hudson links">
+                <li class="list-inline-item"><a href="https://x.com/twostraws" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@twostraws" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://bsky.app/profile/twostraws.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.hackingwithswift.com/" target="_blank" rel="noopener noreferrer" aria-label="Paul Hudson website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/tamia.jpg" width="300" height="300" alt="Tamia James" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Tamia James</p>
+              <ul class="list-inline team-social" aria-label="Tamia James links">
+                <li class="list-inline-item"><a href="https://www.tamiajamesdesign.com/" target="_blank" rel="noopener noreferrer" aria-label="Tamia James website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/chris.jpg" width="300" height="300" alt="Chris Wu" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Chris Wu</p>
+              <ul class="list-inline team-social" aria-label="Chris Wu links">
+                <li class="list-inline-item"><a href="https://bsky.app/profile/chriswu.com" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://mastodon.social/@MuseumShuffle" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu on Mastodon"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://chriswu.com/" target="_blank" rel="noopener noreferrer" aria-label="Chris Wu website"><i class="fa-solid fa-link" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="speaker-item">
+          <figure class="speaker accent-bg"> <img src="/img/matt.jpg" width="300" height="300" alt="Matt Heaney" class="img-fluid mx-auto d-block" />
+            <figcaption>
+              <p class="text-uppercase accent">Matt Heaney</p>
+              <ul class="list-inline team-social" aria-label="Matt Heaney links">
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/mattheaney23/" target="_blank" rel="noopener noreferrer" aria-label="Matt Heaney on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://x.com/MattHeaney23" target="_blank" rel="noopener noreferrer" aria-label="Matt Heaney on X"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mrgn-50-top text-center">We'd love your help! Whether it's for a whole day or just a few hours, every volunteer makes a difference.</p>
+        <p class="text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe8W4F5dP1NZT0WWpagiYmvVQ-0GYvEGJqAMUZnP6KRodaz_w/viewform?usp=header" class="btn volunteer-button">Volunteer at CommunityKit</a></p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:120px;">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h2 class="text-center"><span>Sponsor</span></h2>
+          <p class="subtitle text-center">CommunityKit is made possible by our generous sponsor</p>
+          <p class="subtitle text-center"><i class="fa-solid fa-angle-down fa-lg"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-8 col-10 mrgn-20-top-btm"><a href="https://www.revenuecat.com/" target="_blank"><img class="img-fluid mx-auto d-block" src="/img/revenuecat.svg" alt="RevenueCat" /></a></div>
+    </div>
+  </div>
+</section>
+<!-- /.About Community -->
+
+
+<!-- Section Location -->
+<section id="location">
+  <address>Residence Inn Cupertino, 19429 Stevens Creek Blvd, Cupertino, CA 95014</address>
+</section>
+<!-- /.Section Location -->
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-9 col-lg-9">
+        <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2026 - CommunityKit.social | <a href="/code-of-conduct/">Code of Conduct</a></p>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-3">
+        <!-- Footer Social Profiles List -->
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item"> <a class="fa-brands fa-mastodon fa-lg" href="https://mastodon.social/@CommunityKit"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-bluesky fa-lg" href="https://bsky.app/profile/communitykit.bsky.social"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-twitter fa-lg" href="https://x.com/communitykit_"></a> </li>
+          <li class="list-inline-item"> <a class="fa-brands fa-discord fa-lg" href="https://discord.gg/j9yQ3JnpAQ"></a> </li>
+        </ul>
+        <!-- /.Footer Social Profiles List -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- /.Footer -->
+
+<script src="/js/site-1.js"></script>
+</body>
+</html>
